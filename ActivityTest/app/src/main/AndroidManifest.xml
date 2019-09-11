@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afworld.activitytest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--默认是 android:launchMode="standard" 模式,任何刷新页面的操作都会创建一个实例-->
+        <!--android:launchMode="singleTop" 模式,只在 Intent intent = new Intent(SecondActivity.this,FirstActivity.class) 这类方式下,First活动才会重建实例-->
+        <!--android:launchMode="singleTask" 模式,让整个程序的一个活动只保留一个实例就靠它了-->
+        <!--android:launchMode="singleInstance" 模式,特殊些,前3种是每个活动都自己的返回栈,此模式是新创建一个独立的返回栈进行管理这个活动,无论哪个应用来访问这个活动,都共用该返回栈,主要用于多程序间共享活动实例-->
+        <activity
+            android:launchMode="singleTask"
+            android:name=".FirstActivity"
+            android:label="This is FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.example.afworld.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.afworld.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

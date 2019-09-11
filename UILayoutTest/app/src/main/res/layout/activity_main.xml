@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--在app/build.gradle中添加 compile: 的百分比布局的依赖后使用PercentRelativeLayout演示    -->
+<android.support.percent.PercentRelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        android:text="Button1"
+    />
+
+    <Button
+        android:id="@+id/button2"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Button2"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        android:layout_below="@+id/button1"
+        android:text="Button3"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button3"
+        android:text="Button4"
+        />
+
+</android.support.percent.PercentRelativeLayout>
+
+
+<!--在app/build.gradle中添加 compile: 的百分比布局的依赖后使用PercentFrameLayout演示    -->
+<!--<android.support.percent.PercentFrameLayout-->
+    <!--xmlns:android = "http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app = "http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:text="Button1"-->
+        <!--android:layout_gravity="left|top"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button2"-->
+        <!--android:text="Button2"-->
+        <!--android:layout_gravity="right|top"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:text="Button3"-->
+        <!--android:layout_gravity="left|bottom"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:text="Button4"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--/>-->
+
+<!--</android.support.percent.PercentFrameLayout>-->
+<!--帧布局演示-->
+<!--<FrameLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:text="This is textview"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--/>-->
+
+<!--</FrameLayout>-->
+
+<!--相对布局演示-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/button3"-->
+        <!--android:layout_toLeftOf="@+id/button3"-->
+        <!--android:text="Button1"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/button3"-->
+        <!--android:layout_toRightOf="@+id/button3"-->
+        <!--android:text="Button2"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="Button3"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/button3"-->
+        <!--android:layout_toLeftOf="@+id/button3"-->
+        <!--android:text="Button4"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/button3"-->
+        <!--android:layout_toRightOf="@+id/button3"-->
+        <!--android:text="Button5"-->
+        <!--/>-->
+    <!---->
+    <!---->
+<!--</RelativeLayout>    -->
+
+<!--线性布局演示-->
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--&lt;!&ndash;方向:横向, 测试 android:layout_width="0dp",android:layout_weight="1" 时&ndash;&gt;-->
+    <!--EditText, Button 两控件的屏幕宽度占比, 是根据 layout_weight 属性值 相加后,-->
+    <!--&lt;!&ndash;控件占比=(被屏幕宽度/所有layout_weight属性值的和)*控件layout_weight属性值&ndash;&gt;-->
+    <!--&lt;!&ndash;实例中,两个控件layout_weight属性值各为1,所以屏幕宽度上各占一半&ndash;&gt;-->
+    <!--<EditText-->
+        <!--android:id="@+id/input_message"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="Type something"-->
+        <!--/>-->
+
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;不平分时,可能更美观些&ndash;&gt;-->
+    <!--<Button-->
+        <!--android:id="@+id/send"-->
+        <!--android:layout_width = "wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Send"-->
+        <!--/>-->
+
+    <!--&lt;!&ndash;方向:横向,测试三个按钮在 top,center_vertical,bottom三个对齐方式的展示&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Hello World!"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="top"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Button1"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button2"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Button2"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Button3"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+<!--</LinearLayout>-->
